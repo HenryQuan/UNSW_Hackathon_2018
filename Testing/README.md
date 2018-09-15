@@ -14,3 +14,4 @@ Do not follow quick start, please follow **Building Projects with Native Code.**
 - [x] Henry(Da lao)
 - [x] Jerry He
 - [x] Gregory Zhonghai Zhang 
+- [x] 0xlightyear
