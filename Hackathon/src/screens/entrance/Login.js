@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 import {View, TextInput, Text, Button} from 'react-native-ui-lib';
 import {Typography, Colors} from 'react-native-ui-lib';
 
-export class Login extends Component {
-
+class Login extends Component {
   render() {
     return (
       <View flex paddingH-25 paddingT-80 bg-bgGrey>
@@ -59,3 +58,5 @@ Colors.loadColors({
     buttonBgGrey: '#707070',
     signupGrey:'#666666'
 });
+
+export { Login };
