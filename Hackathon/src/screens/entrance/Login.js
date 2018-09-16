@@ -42,7 +42,7 @@ class Login extends Component {
             labelGrey
         />
         </View>
-        <View marginT-100 center>
+        <View marginT-100>
           <Button text50 white background-buttonBgGrey label="Login"/>
           <Button link text60 buttonBgGrey label="Sign Up" marginT-20/>
         </View>
