@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import {View, TextInput, Text, Button} from 'react-native-ui-lib';
 import {Typography, Colors} from 'react-native-ui-lib';
+import { loginTheme } from '../../constants/colour';
 
 class Login extends Component {
+  // TODO: update to react native elements
   render() {
     return (
       <View flex paddingH-25 paddingT-80 bg-bgGrey>
@@ -51,12 +53,8 @@ class Login extends Component {
   }
 }
 
-Colors.loadColors({
-    bgGrey: '#3C3C3C',
-    labelGrey: '#C9C9C9',
-    deepPurple: '#4B0097',
-    buttonBgGrey: '#707070',
-    signupGrey:'#666666'
-});
+// TODO: change to react native style
+// so stylesheet.create
+Colors.loadColors(loginTheme);
 
 export { Login };
