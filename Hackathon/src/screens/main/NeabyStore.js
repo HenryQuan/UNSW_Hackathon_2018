@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
-import { StoreList } from '../../component/list/StoreList';
-import { StoreListCell } from '../../component/list/StoreListCell';
+import { StoreList } from '../../component/';
+
 class NeabyStore extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <StoreListCell />
+      <View>
+        <StoreList />
       </View>
     );
   }

@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
-import StoreListCell from './'
+import StoreListCell from './StoreListCell';
 
 class StoreList extends Component {
   render() {
     const { container } = styles;
-    
     return (
       <View style={container}>
         <FlatList
