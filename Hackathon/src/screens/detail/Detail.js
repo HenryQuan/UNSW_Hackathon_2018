@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {loginTheme} from '../../constants/colour';
 import { View, Text, StyleSheet, Image} from 'react-native';
 import Swiper from 'react-native-swiper';
-import {StoreList} from '../../component'
+import {RecommendationList} from '../../component'
 
 
       
@@ -50,7 +50,7 @@ class Detail extends Component {
             </Text>
             </View>
             <View style={{height:100}}>
-            <StoreList />
+            <RecommendationList data={global.storeData} />
             </View>
         </View>
       );
