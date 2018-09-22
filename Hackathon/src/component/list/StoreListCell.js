@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { Avatar } from 'react-native-elements';
 
-class StoreListCell extends Component {
+export default class StoreListCell extends Component {
   render() {
     const { container } = styles;
+    const { data } = this.props;
+    const { avatar, title, distance, description, rating, price } = data;
     return (
       <View style={container}>
-        <Text>StoreListCell</Text>
+        <Text>Hello</Text>
       </View>
     )
   };
@@ -19,5 +22,3 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   }
 });
-
-export { StoreListCell };

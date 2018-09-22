@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
-import { StoreList } from '../../component/list/StoreList';
+import { StoreList } from '../../component/';
 
 class NeabyStore extends Component {
   render() {
     return (
-      <View style={styles.container}>
+      <View>
         <StoreList />
       </View>
     );
