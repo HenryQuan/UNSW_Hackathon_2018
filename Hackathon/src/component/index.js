@@ -1,1 +1,1 @@
-export * from './common/FormInput';
+export * from './common/FormBox';

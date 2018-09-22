@@ -9,4 +9,4 @@ let loginTheme = {
   signupGrey:'#666666'
 }
 
-export { loginTheme }
+export { loginTheme };
