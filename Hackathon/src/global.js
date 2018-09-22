@@ -18,6 +18,6 @@ global.moreDetail={
 global.username = "";
 
 global.reviews=[
-  {name:"Alan", comment:"Good room."},
-  {name:"Jan", comment:"Nice person."}
+  {comment:"Alan : Good room."},
+  {comment:"Jan : Nice person."}
 ]

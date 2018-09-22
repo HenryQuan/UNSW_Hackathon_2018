@@ -38,7 +38,7 @@ class Detail extends Component {
             <Text style={styles.subtitle}>AvaibleTime:</Text>
             <Text style={styles.subtitle}>Location: </Text>
             <Text style={styles.subtitle}>Reviews:</Text>
-            <Text style={styles.text}>Reviews</Text>
+            <Text style={styles.text}>comment</Text>
             </View>
  
             <View style={{height:100}}>
