@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, Alert } from 'react-native';
 import strings from '../../constants/language';
-import { FormBox } from '../../component/';
+import { FormBox, QuickInput } from '../../component/';
 import { Button } from 'react-native-elements';
 import { Actions } from 'react-native-router-flux';
 
@@ -11,13 +11,13 @@ class Login extends Component {
   }
 
   render() {
-    const { mainView, inputView } = styles;
+    const { mainView, inputView, title } = styles;
     return (
       <View style={mainView}>
-        <Text>{strings.app_welcome}</Text>
+        <Text style={title}>{strings.app_welcome}</Text>
         <View style={inputView}>
-          <FormBox name={strings.username_input} onChange={(text) => this.setState({username: text})}/>
-          <FormBox name={strings.password_input} onChange={(text) => this.setState({pass: text})}/>
+          <QuickInput name={strings.username_input} onChange={(text) => this.setState({username: text})}/>
+          <QuickInput name={strings.password_input} onChange={(text) => this.setState({pass: text})}/>
         </View>
         <View>
           <Button title={strings.login_button} onPress={() => this.login()}/>
@@ -32,6 +32,7 @@ class Login extends Component {
    */
   login() {
     const { username, pass } = this.state;
+    console.log(this.state);
     var isUser = false;
     user.forEach(element => {
       const { name, password } = element;
@@ -49,6 +50,10 @@ const styles = StyleSheet.create({
   mainView: {
     flex: 1,
     justifyContent: 'space-around',
+  },
+  title: {
+    fontSize: 36, fontWeight: '500',
+    margin: 16, color: 'black'
   },
   inputView: {
   }
