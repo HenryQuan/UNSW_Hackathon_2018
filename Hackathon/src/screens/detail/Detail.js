@@ -24,7 +24,7 @@ class Detail extends Component {
             </Swiper>
             </View>
             <View style={{height:180}}>
-            <Text>Header</Text>
+            <Text style={styles.title}>Title</Text>
             </View>
             <View style={{height:180}}>
             <Text>Body</Text>
