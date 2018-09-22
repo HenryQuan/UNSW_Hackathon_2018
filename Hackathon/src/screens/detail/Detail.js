@@ -74,12 +74,12 @@ class Detail extends Component {
       padding:10
     },
     title: {
-      color: '#707070',
+      color: '#0B3861',
       fontSize: 40,
       fontWeight: 'bold',
     },
     describe: {
-      color: '#3C3C3C',
+      color: '#707070',
       fontSize: 25,
       fontWeight: 'bold',
     },
@@ -89,12 +89,12 @@ class Detail extends Component {
 
     },
     subtitle: {
-      color: '#4B0097',
-      fontSize: 28,
+      color: '#0B3861',
+      fontSize: 25,
       fontWeight: 'bold',
     },
     rating: {
-      color: '#3C3C3C',
+      color: '#FFBF00',
       fontSize: 25,
 
     }
