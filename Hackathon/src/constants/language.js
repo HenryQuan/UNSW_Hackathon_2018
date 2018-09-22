@@ -25,7 +25,7 @@ export default strings = new LocalizedStrings({
   },
   ja: {
     // Login screen
-    app_welcome: 'ストレージトリックへ\nよこそう',
+    app_welcome: 'StorageTrickへ\nよこそう',
     username_input: 'ユーザー名',
     password_input: 'パスワード',
     login_button: 'ログイン',
