@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { Login } from './screens';
+import { Login, NeabyStore } from './screens';
 
 export default class App extends Component {
   render() {
     return (
-      <Login />
+      <NeabyStore />
     );
   }
 }
+
