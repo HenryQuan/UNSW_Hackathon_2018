@@ -13,13 +13,12 @@ export default class RecommendationListCell extends Component {
         <Avatar large rounded title={avatar} />
         <View>
           <View style={subView}>
-            <Text style={mainTitle}>{title}</Text>
-            <Text>{rating}</Text>
-          </View>
-          <Text>{description}</Text>
-          <View style={subView}>
+            <Text>{title}</Text>
             <Text>{distance + ' km'}</Text>
-            <Text>{price + '$ per month'}</Text>
+            <Text>{price + '$ monthly'}</Text>
+          </View>
+          <View style={subView}>
+            
           </View>
         </View>
       </QuickTouchable>
@@ -33,8 +32,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   subView: {
+    width: 60,
     flex: 1,
-    flexDirection: 'row',
   },
   mainTitle: {
     fontSize: 18,
