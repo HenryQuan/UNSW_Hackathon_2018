@@ -3,6 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import strings from '../../constants/language';
 import { FormBox } from '../../component/';
 import { Button } from 'react-native-elements';
+import { Actions } from 'react-native-router-flux';
 
 class Login extends Component {
   // TODO: update to react native elements
@@ -17,7 +18,7 @@ class Login extends Component {
         </View>
         <View>
           <Button title={strings.login_button} />
-          <Button title={strings.signup_button} />
+          <Button title={strings.signup_button} onPress={() => Actions.register()}/>
         </View>
       </View>
     );
