@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { Avatar } from 'react-native-elements';
 import { QuickTouchable } from '../common/QuickTouchable';
+import { Actions } from 'react-native-router-flux';
 
 export default class StoreListCell extends Component {
   render() {
@@ -9,7 +10,7 @@ export default class StoreListCell extends Component {
     const { mainView, subView, mainTitle } = styles;
     const { avatar, title, distance, description, rating, price } = this.props.data;
     return (
-      <QuickTouchable style={mainView}>
+      <QuickTouchable style={mainView} onPress={() => this.detail()}>
         <Avatar large rounded title={avatar} />
         <View>
           <View style={subView}>
@@ -25,6 +26,13 @@ export default class StoreListCell extends Component {
       </QuickTouchable>
     )
   };
+
+  /**
+   * go to detail screen
+   */
+  detail() {
+    Actions.detail({data: this.props.data});
+  }
 }
 
 const styles = StyleSheet.create({

@@ -1,55 +1,53 @@
 import React, { Component } from 'react';
 import {loginTheme} from '../../constants/colour';
-import { View, Text, StyleSheet, Image} from 'react-native';
+import { View, Text, StyleSheet, Image, ScrollView } from 'react-native';
 import Swiper from 'react-native-swiper';
 import {RecommendationList} from '../../component'
       
 class Detail extends Component {
     render(){
-        //const {avatar,title,rating,description,distance,price} = this.props.data
+      const { avatar,title,rating,description,distance,price } = this.props.data;
+      const { location, available } = global.moreDetail;
       return (
         <View style={{flex:1}}>
             <View style={{height:200}}>
-            <Swiper style={styles.wrapper} showsButtons={true} autoplay>
-                <View style={styles.slide1}>
-                <Image source={require('../../img/1.jpg')}/>
-                </View>
-                <View style={styles.slide2}>
-                <Image source={require('../../img/2.jpg')}/>
-                </View>
-                <View style={styles.slide3}>
-                <Image source={require('../../img/3.jpg')}/>
-                </View>
-            </Swiper>
+              <Swiper style={styles.wrapper} showsButtons={true} autoplay>
+                  <View style={styles.slide1}>
+                    <Image source={require('../../img/1.jpg')}/>
+                  </View>
+                  <View style={styles.slide2}>
+                    <Image source={require('../../img/2.jpg')}/>
+                  </View>
+                  <View style={styles.slide3}>
+                    <Image source={require('../../img/3.jpg')}/>
+                  </View>
+              </Swiper>
             </View>
-            <View style={{height:100}}>
-          <View style={styles.subView}>
-            <Text style={styles.title}>title</Text>
-            <Text>       </Text>
-            <Text style={styles.rating}>rating</Text>
-          </View>
-          <Text style={styles.subtitle}>name</Text>
-          </View>
-            <View style={{height:250}}>
-    
-            <Text style={styles.text}>describe</Text>
-            <Text style={styles.subtitle}>AvaibleTime:</Text>
-            <Text style={styles.subtitle}>Location: </Text>
-            <Text style={styles.subtitle}>Reviews:</Text>
-            <Text style={styles.text}>comment</Text>
+          <ScrollView>
+            <View style={styles.subView}>
+              <Text style={styles.title}>{title}</Text>
+              <Text style={styles.rating}>{rating}</Text>
             </View>
- 
-            <View style={{height:100}}>
-            <RecommendationList data={global.storeData} />
+            <View>
+              <Text style={styles.subtitle}>{avatar}</Text>
+              <Text style={styles.text}>{description}</Text>
+              <Text style={styles.subtitle}>{available}</Text>
+              <Text style={styles.subtitle}>{location} </Text>
             </View>
+            <View style={{marginTop: 16}}>
+              <Text style={styles.subtitle}>Reviews:</Text>
+              <Text style={styles.text}>{"comment1\ncomment2\ncomment3\ncomment4\ncomment5\ncomment6\ncomment7\ncomment8\ncomment9\n"}</Text>
+            </View>
+            <View>
+              <RecommendationList data={global.storeData} />
+            </View>
+          </ScrollView>
         </View>
       );
     }
   }
 
   const styles = StyleSheet.create({
-    wrapper: {
-    },
     slide1: {
       flex: 1,
       justifyContent: 'center',
@@ -69,8 +67,7 @@ class Detail extends Component {
       backgroundColor: '#92BBD9',
     },
     subView: {
-      flex: 1,
-      flexDirection: 'row',
+      flexDirection: 'row', alignItems: 'center',
       padding:10
     },
     title: {
