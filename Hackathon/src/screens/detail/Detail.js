@@ -11,7 +11,7 @@ class Detail extends Component {
       return (
         <View style={{flex:1}}>
             <View style={{height:200}}>
-            <Swiper style={styles.wrapper} showsButtons={true}>
+            <Swiper style={styles.wrapper} showsButtons={true} autoplay>
                 <View style={styles.slide1}>
                 <Image source={require('../../img/1.jpg')}/>
                 </View>
@@ -23,10 +23,25 @@ class Detail extends Component {
                 </View>
             </Swiper>
             </View>
-            <View>
-                // to do
+            <View style={{height:180}}>
+            <Text>Header</Text>
             </View>
-            <Text>Hello</Text>
+            <View style={{height:180}}>
+            <Text>Body</Text>
+            </View>
+            <View style={{height:100}}>
+            <Swiper style={styles.wrapper} showsButtons={true}>
+        <View style={styles.slide1}>
+          <Text style={styles.text}>Hello Swiper</Text>
+        </View>
+        <View style={styles.slide2}>
+          <Text style={styles.text}>Beautiful</Text>
+        </View>
+        <View style={styles.slide3}>
+          <Text style={styles.text}>And simple</Text>
+        </View>
+      </Swiper>
+            </View>
         </View>
       );
     }
