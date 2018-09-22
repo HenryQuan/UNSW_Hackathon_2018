@@ -6,12 +6,8 @@ class StoreList extends Component {
   render() {
     const { container } = styles;
     return (
-      <View style={container}>
-        <FlatList
-          data={global.storeData}
-          renderItem={({item}) => <StoreListCell data={item}/>}
-        />
-      </View>
+      <FlatList data={this.props.data}
+        renderItem={({item}) => <StoreListCell data={item}/>} />
     )
   };
 }

@@ -6,7 +6,7 @@ class NeabyStore extends Component {
   render() {
     return (
       <View>
-        <StoreList />
+        <StoreList data={global.storeData}/>
       </View>
     );
   }
