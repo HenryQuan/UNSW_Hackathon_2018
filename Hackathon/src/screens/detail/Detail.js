@@ -24,7 +24,7 @@ class Detail extends Component {
             </Swiper>
             </View>
             <View style={{height:180}}>
-            <Text style={styles.title}>Title</Text>
+            <Text>Header</Text>
             </View>
             <View style={{height:180}}>
             <Text>Body</Text>
@@ -68,7 +68,7 @@ class Detail extends Component {
       alignItems: 'center',
       backgroundColor: '#92BBD9',
     },
-    title: {
+    text: {
       color: '#fff',
       fontSize: 30,
       fontWeight: 'bold',
