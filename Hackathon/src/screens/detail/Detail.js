@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {loginTheme} from '../../constants/colour';
 import { View, Text, StyleSheet, Image} from 'react-native';
 import Swiper from 'react-native-swiper';
-import StoreList from '../../component/list/StoreList'
+import {StoreList} from '../../component'
 
 
       
@@ -50,17 +50,7 @@ class Detail extends Component {
             </Text>
             </View>
             <View style={{height:100}}>
-            <Swiper style={styles.wrapper} showsButtons={true}>
-        <View style={styles.slide1}>
-          <Text style={styles.text}>Hello Swiper</Text>
-        </View>
-        <View style={styles.slide2}>
-          <Text style={styles.text}>Beautiful</Text>
-        </View>
-        <View style={styles.slide3}>
-          <Text style={styles.text}>And simple</Text>
-        </View>
-      </Swiper>
+            <StoreList />
             </View>
         </View>
       );
