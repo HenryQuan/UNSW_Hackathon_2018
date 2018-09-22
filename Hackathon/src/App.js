@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { StoreList } from './screens';
+import { NeabyStore } from './screens';
 
 export default class App extends Component {
   render() {
     return (
-      <StoreList />
+      <NeabyStore />
     );
   }
 }

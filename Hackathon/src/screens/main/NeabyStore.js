@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
+import { StoreList } from '../../component/list/StoreList';
 
-class Store extends Component {
+class NeabyStore extends Component {
   render() {
     return (
       <View style={styles.container}>
-
+        <StoreList />
       </View>
     );
   }
@@ -23,4 +24,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export { Store };
+export { NeabyStore };

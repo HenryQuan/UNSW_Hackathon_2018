@@ -1,2 +1,2 @@
 export * from './entrance/Login';
-export * from './main/Store';
+export * from './main/NeabyStore';
