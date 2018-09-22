@@ -12,7 +12,7 @@ export default class App extends Component {
             <Scene key="register" component={Register}/>
           </Scene>
           <Scene key="main">
-            <Scene key="nearby" component={LogNeabyStorein}/>
+            <Scene key="nearby" component={NeabyStore}/>
           </Scene>
         </Scene>
       </Router>
