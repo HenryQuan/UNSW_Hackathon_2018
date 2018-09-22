@@ -57,12 +57,13 @@ class Register extends Component {
 	 * validate input and go to map
 	 */
 	pushToMap() {
-		const { password, email, phone, username } = this.state;
+		const { password, email, username } = this.state;
 		if (password == "" || email == "" || username == "") {
 			// Only check for empty input now
 			Alert.alert(strings.alert_warning, strings.register_failure);
 		} else {
 			// Go to map now
+			global.username = username;
 		}
 	}
 }
