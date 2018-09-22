@@ -1,60 +1,27 @@
-import React, {Component} from 'react';
-import {View, TextInput, Text, Button} from 'react-native-ui-lib';
-import {Typography, Colors} from 'react-native-ui-lib';
-import { loginTheme } from '../../constants/colour';
+import React, { Component } from 'react';
+import { View, Text, StyleSheet } from 'react-native';
 import strings from '../../constants/language';
+import { FormBox } from '../../component/common/FormBox';
+import { Button } from 'react-native-elements';
 
 class Login extends Component {
   // TODO: update to react native elements
   render() {
     return (
-      <View flex paddingH-25 paddingT-80 bg-bgGrey>
-        <Text text20 white>{strings.app_welcome}</Text>
-        <View marginT-40>
-        <TextInput
-            text50 
-            placeholder={strings.username_input}
-            floatingPlaceholder
-            floatingPlaceholderColor={{
-              default:'white',
-              error:'red',
-              focus:'#E0E0E0'
-            }}
-            underlineColor={{
-              default:'white',
-              error:'red',
-              focus:'#E0E0E0'
-            }}
-            labelGrey
-        />
-        <TextInput 
-            text50 
-            placeholder={strings.password_input}
-            floatingPlaceholder 
-            floatingPlaceholderColor={{
-              default:'white',
-              error:'red',
-              focus:'#E0E0E0'
-            }}
-            underlineColor={{
-              default:'white',
-              error:'red',
-              focus:'#E0E0E0'
-            }}
-            secureTextEntry 
-            labelGrey
-        />
-        </View>
-        <View marginT-100>
-          <Button text50 white background-buttonBgGrey label={strings.login_button}/>
-          <Button link text60 buttonBgGrey label={strings.signup_button} marginT-20/>
-        </View>
+      <View>
+        <Text>{strings.app_welcome}</Text>
+        <FormBox name={strings.login_button} onChange={() => null} error={""} />
+        <FormBox name={strings.password_input} onChange={() => null} error={""} />
+        <Button title={strings.login_button} />
+        <Button title={strings.signup_button} />
       </View>
     );
   }
 }
 
 // TODO: change to react native style -> Stylesheet.create()
-Colors.loadColors(loginTheme);
+const styles = StyleSheet.create({
+
+})
 
 export { Login };
