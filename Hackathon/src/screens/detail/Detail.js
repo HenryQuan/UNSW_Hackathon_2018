@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import {loginTheme} from '../../constants/colour';
 import { View, Text, StyleSheet, Image} from 'react-native';
 import Swiper from 'react-native-swiper';
-
+import StoreList from '../../component/list/StoreList'
 
 
       
 class Detail extends Component {
     render(){
+        //const {} = this.props.data
       return (
         <View style={{flex:1}}>
             <View style={{height:200}}>
@@ -23,11 +24,30 @@ class Detail extends Component {
                 </View>
             </Swiper>
             </View>
-            <View style={{height:180}}>
-            <Text>Header</Text>
+            <View style={{height:150}}>
+            <Text>
+                Title: 
+            </Text>
+            <Text>
+                Rating: 
+            </Text>
+            <Text>
+                Price: 
+            </Text>
+            <Text>
+                AvaibleTime:
+            </Text>
             </View>
-            <View style={{height:180}}>
-            <Text>Body</Text>
+            <View style={{height:210}}>
+            <Text>
+                Name: 
+            </Text>
+            <Text>
+                Description: 
+            </Text>
+            <Text>
+                Location: 
+            </Text>
             </View>
             <View style={{height:100}}>
             <Swiper style={styles.wrapper} showsButtons={true}>
