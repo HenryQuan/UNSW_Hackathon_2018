@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, TextInput, Text, Button, Alert } from 'react-native';
 import strings from '../../constants/language';
+import { Actions } from 'react-native-router-flux';
 
 class Register extends Component {
   constructor(props) {
@@ -64,6 +65,7 @@ class Register extends Component {
 		} else {
 			// Go to map now
 			global.username = username;
+			Actions.map();
 		}
 	}
 }

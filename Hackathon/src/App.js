@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Login, NeabyStore, Register } from './screens';
+import { Login, NeabyStore, Register, Map } from './screens';
 import { Router, Scene } from 'react-native-router-flux';
 import strings from './constants/language';
 
@@ -12,7 +12,8 @@ export default class App extends Component {
             <Scene key="login" component={Login} hideNavBar/>
             <Scene key="register" component={Register} title={strings.register_title}/>
           </Scene>
-          <Scene key="main">
+          <Scene key="main" hideNavBar>
+            <Scene key="map" component={Map}/>
             <Scene key="nearby" component={NeabyStore}/>
           </Scene>
         </Scene>
@@ -20,4 +21,3 @@ export default class App extends Component {
     );
   }
 }
-

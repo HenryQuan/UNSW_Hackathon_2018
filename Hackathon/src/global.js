@@ -13,3 +13,12 @@ global.storeData = [
 
 // This is the current username
 global.username = "";
+
+// This is a preset value
+global.user = [
+  {name: 'Henry', password: '123'},
+  {name: 'Jerry', password: '123'},
+  {name: 'Bingo', password: '123'},
+  {name: 'Muyang', password: '123'},
+  {name: 'Gregory', password: '123'},
+]
