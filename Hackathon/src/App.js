@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Login, NeabyStore, Register, Map } from './screens';
+import { Login, NeabyStore, Register, Map, Detail } from './screens';
 import { Router, Scene } from 'react-native-router-flux';
 import strings from './constants/language';
 
@@ -15,6 +15,7 @@ export default class App extends Component {
           <Scene key="main" hideNavBar>
             <Scene key="map" component={Map}/>
             <Scene key="nearby" component={NeabyStore}/>
+            <Scene key="detail" component={Detail}/>
           </Scene>
         </Scene>
       </Router>

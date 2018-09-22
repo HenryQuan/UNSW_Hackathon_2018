@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import { Avatar } from 'react-native-elements';
 import { QuickTouchable } from '../common/QuickTouchable';
 
-export default class StoreListCell extends Component {
+export default class RecommendationListCell extends Component {
   render() {
     console.log(this.props.data);
     const { mainView, subView, mainTitle } = styles;
@@ -13,13 +13,12 @@ export default class StoreListCell extends Component {
         <Avatar large rounded title={avatar} />
         <View>
           <View style={subView}>
-            <Text style={mainTitle}>{title}</Text>
-            <Text>{rating}</Text>
-          </View>
-          <Text>{description}</Text>
-          <View style={subView}>
+            <Text>{title}</Text>
             <Text>{distance + ' km'}</Text>
-            <Text>{price + '$ per month'}</Text>
+            <Text>{price + '$ monthly'}</Text>
+          </View>
+          <View style={subView}>
+            
           </View>
         </View>
       </QuickTouchable>
@@ -33,8 +32,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   subView: {
+    width: 60,
     flex: 1,
-    flexDirection: 'row',
   },
   mainTitle: {
     fontSize: 18,
