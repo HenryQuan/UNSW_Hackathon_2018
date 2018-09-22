@@ -16,3 +16,8 @@ global.moreDetail={
 }
 // This is the current username
 global.username = "";
+
+global.reviews=[
+  {name:"Alan", comment:"Good room."},
+  {name:"Jan", comment:"Nice person."}
+]
