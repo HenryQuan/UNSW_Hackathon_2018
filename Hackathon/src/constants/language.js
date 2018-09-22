@@ -12,7 +12,13 @@ export default strings = new LocalizedStrings({
     password_input: 'Password',
     login_button: 'Login',
     signup_button: 'Sign up',
-    // Other screens
+    input_box: 'Please Enter Here',
+    button_submit: 'Submit',
+    // Register screens
+    register_title: 'Register',
+    register_success: "Success!",
+    register_failure: "Please enter compulsory entries",
+    alert_warning: "Warning",
   },
   zh: {
     // Login screen
@@ -25,7 +31,7 @@ export default strings = new LocalizedStrings({
   },
   ja: {
     // Login screen
-    app_welcome: 'ストレージトリックへ\nよこそう',
+    app_welcome: 'StorageTrickへ\nよこそう',
     username_input: 'ユーザー名',
     password_input: 'パスワード',
     login_button: 'ログイン',
@@ -33,3 +39,4 @@ export default strings = new LocalizedStrings({
     // Other screens
   }
 });
+

@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import { Avatar } from 'react-native-elements';
 import { QuickTouchable } from '../common/QuickTouchable';
 
-export default class StoreListCell extends Component {
+export default class RecommendationListCell extends Component {
   render() {
     console.log(this.props.data);
     const { mainView, subView, mainTitle } = styles;
