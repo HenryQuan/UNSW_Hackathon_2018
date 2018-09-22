@@ -8,7 +8,7 @@ import StoreList from '../../component/list/StoreList'
       
 class Detail extends Component {
     render(){
-        //const {} = this.props.data
+        //const {avatar,title,rating,description,distance,price} = this.props.data
       return (
         <View style={{flex:1}}>
             <View style={{height:200}}>
@@ -24,31 +24,21 @@ class Detail extends Component {
                 </View>
             </Swiper>
             </View>
-            <View style={{height:150}}>
-            <Text>
-                Title: 
-            </Text>
-            <Text>
-                Rating: 
-            </Text>
-            <Text>
-                Price: 
-            </Text>
-            <Text>
-                AvaibleTime:
-            </Text>
+            <View style={{height:100}}>
+          <View style={styles.subView}>
+            <Text style={styles.title}>title</Text>
+            <Text>       </Text>
+            <Text style={styles.rating}>rating</Text>
+          </View>
+          <Text style={styles.subtitle}>name</Text>
+          </View>
+            <View style={{height:250}}>
+    
+            <Text style={styles.text}>describe</Text>
+            <Text style={styles.subtitle}>AvaibleTime:</Text>
+            <Text style={styles.subtitle}>Location: </Text>
             </View>
-            <View style={{height:210}}>
-            <Text>
-                Name: 
-            </Text>
-            <Text>
-                Description: 
-            </Text>
-            <Text>
-                Location: 
-            </Text>
-            </View>
+
             <View style={{height:100}}>
             <Swiper style={styles.wrapper} showsButtons={true}>
         <View style={styles.slide1}>
@@ -88,10 +78,35 @@ class Detail extends Component {
       alignItems: 'center',
       backgroundColor: '#92BBD9',
     },
-    text: {
-      color: '#fff',
-      fontSize: 30,
+    subView: {
+      flex: 1,
+      flexDirection: 'row',
+      padding:10
+    },
+    title: {
+      color: '#707070',
+      fontSize: 40,
       fontWeight: 'bold',
+    },
+    describe: {
+      color: '#3C3C3C',
+      fontSize: 25,
+      fontWeight: 'bold',
+    },
+    text: {
+      color: '#3C3C3C',
+      fontSize: 25,
+
+    },
+    subtitle: {
+      color: '#4B0097',
+      fontSize: 28,
+      fontWeight: 'bold',
+    },
+    rating: {
+      color: '#3C3C3C',
+      fontSize: 25,
+
     }
   })
 
