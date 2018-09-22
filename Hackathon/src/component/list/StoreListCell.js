@@ -14,7 +14,11 @@ export default class StoreListCell extends Component {
         <View>
           <View style={subView}>
             <Text style={mainTitle}>{title}</Text>
+<<<<<<< HEAD
             <Text>{rating}</Text>
+=======
+            <Text>{'⭐️' + rating}</Text>
+>>>>>>> dev
           </View>
           <Text>{description}</Text>
           <View style={subView}>
