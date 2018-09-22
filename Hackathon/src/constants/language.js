@@ -14,7 +14,11 @@ export default strings = new LocalizedStrings({
     signup_button: 'Sign up',
     input_box: 'Please Enter Here',
     button_submit: 'Submit',
-    // Other screens
+    // Register screens
+    register_title: 'Register',
+    register_success: "Success!",
+    register_failure: "Please enter compulsory entries",
+    alert_warning: "Warning",
   },
   zh: {
     // Login screen

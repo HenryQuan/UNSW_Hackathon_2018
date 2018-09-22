@@ -10,3 +10,6 @@ global.storeData = [
   {avatar: "AU", title: "Kingsford", rating: 10, description: "This is a description x99", distance: 4, price: 50},
   {avatar: "HO", title: "Waterloo", rating: 1, description: "This is a description", distance: 3.1, price: 50},
 ]
+
+// This is the current username
+global.username = "";
