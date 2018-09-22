@@ -8,8 +8,8 @@ export default strings = new LocalizedStrings({
   en:{
     // Login screen
     app_welcome: 'Welcome to \nStorageTrick',
-    username_input: 'username',
-    password_input: 'password',
+    username_input: 'Username',
+    password_input: 'Password',
     login_button: 'Login',
     signup_button: 'Sign up',
     // Other screens

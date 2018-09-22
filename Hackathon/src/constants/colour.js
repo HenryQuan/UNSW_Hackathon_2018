@@ -10,4 +10,4 @@ let loginTheme = {
   titleColour: '#000000'
 }
 
-export { loginTheme }
+export { loginTheme };
