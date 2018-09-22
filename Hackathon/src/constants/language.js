@@ -14,6 +14,7 @@ export default strings = new LocalizedStrings({
     signup_button: 'Sign up',
     input_box: 'Please Enter Here',
     button_submit: 'Submit',
+    login_failure: 'Username or password is not correct',
     // Register screens
     register_title: 'Register',
     register_success: "Success!",
