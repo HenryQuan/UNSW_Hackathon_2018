@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
 
-export default class StoreList extends Component {
+class StoreList extends Component {
   render() {
+    const { container } = styles;
     return (
-      <View style={styles.container}>
+      <View style={container}>
         <FlatList
           data={[
             {key: 'Devin'},
@@ -19,19 +20,14 @@ export default class StoreList extends Component {
           renderItem={({item}) => <Text style={styles.item}>{item.key}</Text>}
         />
       </View>
-    );
-  }
+    )
+  };
 }
 
 const styles = StyleSheet.create({
   container: {
-   flex: 1,
-   paddingTop: 22
-  },
-  item: {
-    padding: 10,
-    fontSize: 18,
-    height: 44,
-  },
-})
+    flex: 1,
+  }
+});
+
 export { StoreList };

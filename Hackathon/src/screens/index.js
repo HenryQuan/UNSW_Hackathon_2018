@@ -1,2 +1,2 @@
 export * from './entrance/Login';
-export * from './main/StoreList';
+export * from './main/Store';
