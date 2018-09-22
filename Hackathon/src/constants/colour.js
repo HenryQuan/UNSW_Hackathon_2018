@@ -6,7 +6,8 @@ let loginTheme = {
   labelGrey: '#C9C9C9',
   deepPurple: '#4B0097',
   buttonBgGrey: '#707070',
-  signupGrey:'#666666'
+  signupGrey:'#666666',
+  titleColour: '#000000'
 }
 
 export { loginTheme }
