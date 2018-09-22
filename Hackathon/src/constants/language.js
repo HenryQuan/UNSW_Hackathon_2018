@@ -12,6 +12,8 @@ export default strings = new LocalizedStrings({
     password_input: 'password',
     login_button: 'Login',
     signup_button: 'Sign up',
+    input_box: 'Please Enter Here',
+    button_submit: 'Submit',
     // Other screens
   },
   zh: {
@@ -33,3 +35,4 @@ export default strings = new LocalizedStrings({
     // Other screens
   }
 });
+
