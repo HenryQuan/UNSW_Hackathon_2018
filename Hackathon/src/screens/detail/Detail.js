@@ -68,7 +68,7 @@ class Detail extends Component {
       alignItems: 'center',
       backgroundColor: '#92BBD9',
     },
-    text: {
+    title: {
       color: '#fff',
       fontSize: 30,
       fontWeight: 'bold',
