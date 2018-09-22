@@ -11,5 +11,8 @@ global.storeData = [
   {avatar: "HO", title: "Waterloo", rating: "⭐️8", description: "This is a description", distance: 3.1, price: 50},
 ]
 
+global.moreDetail={
+  location:"barker st. kensington",available:"10 Oct to 1 Jan"
+}
 // This is the current username
 global.username = "";
