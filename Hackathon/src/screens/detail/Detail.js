@@ -37,8 +37,10 @@ class Detail extends Component {
             <Text style={styles.text}>describe</Text>
             <Text style={styles.subtitle}>AvaibleTime:</Text>
             <Text style={styles.subtitle}>Location: </Text>
+            <Text style={styles.subtitle}>Reviews:</Text>
+            <Text style={styles.text}>Reviews</Text>
             </View>
-
+ 
             <View style={{height:100}}>
             <RecommendationList data={global.storeData} />
             </View>
