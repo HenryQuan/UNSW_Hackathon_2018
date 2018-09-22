@@ -4,13 +4,11 @@ import { Avatar } from 'react-native-elements';
 
 export default class StoreListCell extends Component {
   render() {
+    console.log(this.props.data);
     const { container } = styles;
-    const { data } = this.props;
-    const { avatar, title, distance, description, rating, price } = data;
+    const { avatar, title, distance, description, rating, price } = this.props.data;
     return (
-      <View style={container}>
-        <Text>Hello</Text>
-      </View>
+      <Text>Hello</Text>
     )
   };
 }
